@@ -7,7 +7,6 @@ if(!shell.which('git')) {
 
 shell.exec('git init')
 shell.exec('git add .')
-const a = shell.exec('git commit -am "更新静态资源"')
 if (shell.exec('git commit -am "更新静态资源"').code !== 0) {
   shell.echo('Error: Git commit failed');
   shell.exit(1);
