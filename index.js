@@ -8,5 +8,5 @@ if(!shell.which('git')) {
 shell.exec('git init')
 shell.exec('git add .')
 const a = shell.exec('git commit -am "更新静态资源"')
-console.log(a)
+console.log(a.code)
 shell.rm('package-lock.json')
