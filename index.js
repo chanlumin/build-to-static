@@ -11,5 +11,6 @@ if (shell.exec('git commit -am "更新静态资源"').code !== 0) {
   shell.echo('Error: Git commit failed');
   shell.exit(1);
 }
+console.log(shell.pwd())
 // console.log(a.code)
 shell.rm('package-lock.json')
