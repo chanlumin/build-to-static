@@ -8,4 +8,4 @@ if(!shell.which('git')) {
 shell.exec('git init')
 shell.exec('git add .')
 shell.exec('git commit -am "更新静态资源"')
-shell.rm()
+shell.rm(package-loca)
